@@ -123,14 +123,14 @@ const t_menu_item MenuList[] =
 	{"BatVol", VOICE_ID_INVALID,                       MENU_VOL           }, // was "VOL"
 	{"RxMode", VOICE_ID_DUAL_STANDBY,                  MENU_TDR           },
 	{"Sql",    VOICE_ID_SQUELCH,                       MENU_SQL           },
-
-	// hidden menu items from here on
-	// enabled if pressing both the PTT and upper side button at power-on
 	{"F Lock", VOICE_ID_INVALID,                       MENU_F_LOCK        },
 	{"Tx 200", VOICE_ID_INVALID,                       MENU_200TX         }, // was "200TX"
 	{"Tx 350", VOICE_ID_INVALID,                       MENU_350TX         }, // was "350TX"
 	{"Tx 500", VOICE_ID_INVALID,                       MENU_500TX         }, // was "500TX"
 	{"350 En", VOICE_ID_INVALID,                       MENU_350EN         }, // was "350EN"
+
+	// hidden menu items from here on
+	// enabled if pressing both the PTT and upper side button at power-on
 	{"ScraEn", VOICE_ID_INVALID,                       MENU_SCREN         }, // was "SCREN"
 #ifdef ENABLE_F_CAL_MENU
 	{"FrCali", VOICE_ID_INVALID,                       MENU_F_CALI        }, // reference xtal calibration
@@ -142,7 +142,7 @@ const t_menu_item MenuList[] =
 	{"",       VOICE_ID_INVALID,                       0xff               }  // end of list - DO NOT delete or move this this
 };
 
-const uint8_t FIRST_HIDDEN_MENU_ITEM = MENU_F_LOCK;
+const uint8_t FIRST_HIDDEN_MENU_ITEM = MENU_SCREN;
 
 const char gSubMenu_TXP[][5] =
 {
